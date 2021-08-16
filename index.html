@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+    </head>
+
+<!-- css style section rather than linking in separate doc-->
+    <style>
+        h1
+        {
+            font-size: 45px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h2
+        {
+            font-size: 35px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h3        
+        {
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        form, p        
+        {
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+
+<!-- basic header for the page-->
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+
+<!-- page main body-->
+    <body>
+        <form action="/process" method="post">
+            <div>
+                <label> First Name: *</label>
+                <input type="text" name="name" placeholder="Your first name. . ."> 
+            </div>
+            <div>
+                <label> Last Name: *</label>
+                <input type="text" name="name" placeholder="Your last name. . ."> 
+            </div>
+            <div>
+                <label> Email: *</label>
+                <input type="text" name="name" placeholder="Your email. . ."> 
+            </div>
+            <div>
+                <label> Password: *</label>
+                <input type="text" name="name" placeholder="Your name. . ."> 
+            </div>
+            <div>
+                <label> Confirm Password: *</label>
+                <input type="text" name="name" placeholder="Your name. . ."> 
+            </div>
+            <div>
+                <label> Birthday: </label>
+                <input type="date" name="dob">
+            </div>
+
+            <div> Gender Identity: </div>
+            <div>
+                <input type="radio" name="font" value="normal" id="normal">
+                <label for="normal"> Male</label>
+                <input type="radio" name="font" value="normal" id="normal">
+                <label for="normal"> Female</label>
+                <input type="radio" name="font" value="normal" id="normal">
+                <label for="normal"> Non-binary</label>
+                <input type="radio" name="font" value="normal" id="normal">
+                <label for="normal"> I prefer not to answer</label>
+            </div>
+
+            <div> A short description about myself: </div>
+            <div>
+                <textarea name="comment" cols="40" rows="5">don't be shy!</textarea>
+            </div>
+            
+            <div>
+                <label> Favorite Language: </label>
+                <select name="language">
+                    <option> Javascript </option>
+                    <option> Ruby </option>
+                    <option> C# </option>
+                    <option> Python </option>
+                    <option> Java <option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" name="accept updates" id="accept">
+                <label for="accept"> Yes, I would like to receive periodic email updates</label>
+            </div>
+            <div>
+                <input type="submit" value="Create Account">
+            </div>
+            <div>* indicates required field</div>
+
+        </form>
+    </body>
